@@ -38,33 +38,38 @@
             width: 200px;
             margin: 20px auto;
         }
+		
+		.button-2 {
+            background-color: rgba(51, 51, 51, 0.05);
+            border-radius: 8px;
+            border-width: 0;
+            color: #333333;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 10px 12px;
+            text-align: center;
+            transition: all 200ms;
+            vertical-align: baseline;
+            white-space: nowrap;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+			}
     </style>
 </head>
 
 <body>
 
-<section class="light">
-		<div class="circle">
-				<p>Submit</p>
-		</div>
-		<div class="circle long">
-			<p>Submit</p>
-		</div>
-</section>
-
-<section class="dark">
-		<div class="circle_black">
-				<p>Submit</p>
-		</div>
-		<div class="circle_black long">			 
-				<p>Submit</p>
-		</div>
-</section>
-
 
     <h1>Czy mnie kochasz?</h1>
-    <button onclick="handleAnswer('tak')">Tak</button>
-    <button onclick="handleAnswer('nie')">Nie</button>
+    <button class="button-2" onclick="handleAnswer('tak')" role="button">Tak</button>
+    <button class="button-2" onclick="handleAnswer('nie')" role="button">Nie</button>
 
     <!-- Obrazek smutnego kota -->
     <img id="sad-cat" src="https://en.meming.world/images/en/thumb/6/6e/Crying_Cat_withheld_tilted.jpg/300px-Crying_Cat_withheld_tilted.jpg" alt="Smutny kot">
